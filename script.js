@@ -18,7 +18,7 @@ function playRound(computerSelection, PlayerSelection) {
                 return 0;
             }
             else {
-                console.log("You lost the round wtffff :( ! paper beats rock")
+                console.log("You lost the round :( ! paper beats rock")
                 return -1;
             }
         case "SCISSORS":
