@@ -1,4 +1,4 @@
-const play = ["Rock ", "Scissors", "Paper"]
+const play = ["Rock", "Scissors", "Paper"]
 function computerPlay() {
     let random = (Math.floor(Math.random() * 3));
     let computerPlay = play[random];
@@ -18,7 +18,7 @@ function playRound(computerSelection, PlayerSelection) {
                 return 0;
             }
             else {
-                console.log("You lost the round :( ! paper beats rock")
+                console.log("You lost the round wtffff :( ! paper beats rock")
                 return -1;
             }
         case "SCISSORS":
