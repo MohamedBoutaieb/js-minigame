@@ -9,7 +9,7 @@ function computerPlay() {
 function playRound(computerSelection, PlayerSelection) {
     if (!PlayerSelection){
              alert("I'm sorry you haven't like the game , refresh to replay")  
-             return 0; 
+             return -3; 
             }
     PlayerSelection = PlayerSelection.toUpperCase()
     switch (PlayerSelection) {
@@ -74,6 +74,9 @@ function game() {
             break;
             case 1 :
                 playerScore+=1;
+            break;
+            case 0 :
+                return 0;
             break;
             default:
             break;
