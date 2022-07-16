@@ -58,7 +58,7 @@ function game() {
     let playerScore = 0;
     for (let i = 0; i < 5; i++){
         let choice = prompt("round " + (i + 1) + ".. enter your choice")
-         if (!PlayerSelection){
+         if (!choice){
              alert("I'm sorry you haven't like the game , refresh to replay")  
              return 0; 
             }
