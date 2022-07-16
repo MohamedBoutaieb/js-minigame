@@ -47,6 +47,9 @@ function playRound(computerSelection, PlayerSelection) {
                 console.log("you lost the round :( ! scissors cuts paper")
                 return -1;
             }
+        case null :
+            alert("i'm sorry you didn't like the game :( refresh to replay")
+            break;
         default:
             console.log("please enter a valid input :))))")
             return -2;
@@ -85,5 +88,4 @@ function game() {
     }
     alert("The score was : You " + playerScore + " - " + pcScore + " Computer" )
 }
-
 game();
