@@ -7,7 +7,7 @@ function computerPlay() {
 }
 
 function playRound(computerSelection, PlayerSelection) {
-    if (!PlayerSelection){
+    if (PlayerSelection === null){
              alert("sorry you didn't like the game , refresh to replay")
              return -3; 
             }
