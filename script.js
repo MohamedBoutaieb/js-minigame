@@ -7,6 +7,9 @@ function computerPlay() {
 }
 
 function playRound(computerSelection, PlayerSelection) {
+    if (!PlayerSelection){
+    alert("I'm sorry you haven't like the game , refresh to replay")    
+    }
     switch (PlayerSelection) {
         case "ROCK":
             if (computerSelection == "Scissors") {
@@ -47,9 +50,6 @@ function playRound(computerSelection, PlayerSelection) {
                 console.log("you lost the round :( ! scissors cuts paper")
                 return -1;
             }
-        case null :
-            alert("i'm sorry you didn't like the game :( refresh to replay")
-            break;
         default:
             console.log("please enter a valid input :))))")
             return -2;
