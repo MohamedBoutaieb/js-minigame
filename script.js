@@ -7,9 +7,6 @@ function computerPlay() {
 }
 
 function playRound(computerSelection, PlayerSelection) {
-    if (!PlayerSelection){
-    alert("I'm sorry you haven't like the game , refresh to replay")    
-    }
     switch (PlayerSelection) {
         case "ROCK":
             if (computerSelection == "Scissors") {
@@ -60,9 +57,13 @@ function game() {
     let pcScore = 0;
     let playerScore = 0;
     for (let i = 0; i < 5; i++){
-        let choice = prompt("round " + (i + 1) + ".. enter your choice").toUpperCase()
+        let choice = prompt("round " + (i + 1) + ".. enter your choice")
+         if (!PlayerSelection){
+             alert("I'm sorry you haven't like the game , refresh to replay")  
+             return 0; 
+            }
         console.log("you chose "+ choice.toLowerCase())
-        let result = playRound(computerPlay(), choice)
+        let result = playRound(computerPlay(), choice.toUpperCase())
         switch (result) {
             case -2 : 
                 i--;
